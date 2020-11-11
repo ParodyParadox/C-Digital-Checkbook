@@ -35,7 +35,7 @@ int main()
             //programStart:
             do
             {
-                clearConsole(30);
+                clearConsole(4);
                 cout << "_____Welcome!_____\n\n";
                 cout << "Current Time/Date: " << currentDate << endl;
                 cout << "Options: 'clear' (Clears checkbook, careful!), 'start' (add a new checkbook entry), 'list' (list current checkingbook data)\n";

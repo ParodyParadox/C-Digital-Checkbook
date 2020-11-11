@@ -85,7 +85,7 @@ void displayCheckingBook() {
     ifstream accountf;
     accountf.open("accountInfo.txt");
     if (accountf.is_open()) {
-        clearConsole(50);
+        clearConsole(5);
         cout << accountf.rdbuf();
         accountf.close();
     }
