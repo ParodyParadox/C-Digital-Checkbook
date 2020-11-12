@@ -50,13 +50,15 @@ int main()
                     clearConsole(5);
                     cout << "Enter The Operation You Want To Do (ex. -50, +65.45): ";
                     cin >> operation;
-                    if (operation[0] == '+' || operation[0] == '-') { accountBalance = calcBalance(operation, accountBalance); updateBalance(accountBalance); }
-                    else { cout << "Please Enter a Proper Value..."; clearConsole(5); }// <----- (remove "}" )  goto programStart; }
+                    if (operation[0] == '+' || operation[0] == '-') { accountBalance = calcBalance(operation, accountBalance); updateBalance(accountBalance); 
                     cout << "Note For Transaction: ";
                     cin >> reason;
                     cout << "Your All Set!";
                     makeChanges(currentDate, accountBalanceArchive, accountBalance, operation, reason);
-                    clearConsole(50);
+                    clearConsole(6);
+                    }
+                    else { cout << "Please Enter a Proper Value..."; clearConsole(5); }// <----- (remove "}" ) goto programStart; }
+                    
                     //goto programStart;
 
                 }
